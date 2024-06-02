@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Signature</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 720px;
+            margin: 0;
+            padding: 0;
+        }
+        .email-signature {
+            margin: 0;
+            padding: 0;
+        }
+        .contact-info, .disclaimer {
+            margin-bottom: 20px;
+        }
+        .contact-info strong, .contact-info a, .company-info strong, .company-info a, .disclaimer a {
+            color: #006575;
+            text-decoration: none;
+        }
+        .signature-container {
+            display: flex;
+            align-items: center;
+            border-top: 2px solid #006575;
+            padding-top: 10px;
+            flex-wrap: wrap;
+        }
+        .column {
+            flex: 1;
+            padding: 0 10px;
+            margin-bottom: 10px;
+        }
+        .company-logo, .certifications {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .company-logo img, .certifications img {
+            width: 100%;
+            max-width: 240px;
+        }
+        .company-info {
+            font-size: 12px;
+            text-align: left;
+        }
+        .company-info a {
+            font-size: 10px;
+        }
+        .company-info span {
+            font-size: 9px;
+        }
+        .social-icons {
+            margin-top: 10px;
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+        }
+        .social-icons a {
+            margin: 0 5px;
+        }
+        .social-icons img {
+            width: 20px;
+            height: 20px;
+        }
+        .disclaimer {
+            font-size: 9px;
+            color: #666666;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+<div class="email-signature">
+    <section class="contact-info">
+        <p>
+            <strong>%%DisplayName%%</strong><br>
+            %%Title%%<br>
+            <strong><a href="mailto:%%WindowsEmailAddress%%">%%WindowsEmailAddress%%</a></strong><br>
+            <a href="tel:%%Phone%%">%%Phone%%</a>
+        </p>
+    </section>
+    <section class="signature-container">
+        <div class="column company-logo">
+            <a href="https://www.salimpa.pt">
+                <img src="https://raw.githubusercontent.com/salimpapt/images/main/salimpa.svg" alt="Salimpa Facility Services Logo">
+            </a>
+            <div class="social-icons">
+                <a href="https://pt.linkedin.com/company/salimpafacilityservices" target="_blank">
+                    <img src="https://raw.githubusercontent.com/salimpapt/images/main/in.svg" alt="LinkedIn">
+                </a>
+                <a href="https://www.facebook.com/salimpasoclimpezas/" target="_blank">
+                    <img src="https://raw.githubusercontent.com/salimpapt/images/main/fb.svg" alt="Facebook">
+                </a>
+            </div>
+        </div>
+        <div class="column company-info">
+            <strong>Sede / Filial Porto</strong><br>
+            Travessa da Liberdade, Pav. 4 <br>
+            4785-081 Covelas - Trofa<br>
+            <a href="tel:+351252418878">TLF: +351 252 418 878</a><br>
+            <span>(Chamada para a rede fixa nacional.)</span><br><br>
+            <strong>Filial Lisboa</strong><br>
+            Rua da Bica, 17<br>
+            2665-608 Venda do Pinheiro<br>
+            <a href="tel:+351219550414">TLF: +351 219 550 414</a><br>
+            <span>(Chamada para a rede fixa nacional.)</span><br>
+        </div>
+        <div class="column certifications">
+            <img src="https://raw.githubusercontent.com/salimpapt/images/main/tuv.svg" alt="TÜV Austria Certifications">
+        </div>
+    </section>
+    <section class="disclaimer">
+        <p>Save resources, think before you print.</p>
+        <p>Esta mensagem, assim como os ficheiros eventualmente anexos, contém informação confidencial e reservada apenas ao conhecimento da(s) pessoa(s) nela indicada(s) como destinatária(s), pelo que o seu uso, divulgação ou cópia por qualquer outra pessoa distinta do destinatário, está legalmente proibida. Se não for o destinatário, solicitamos que não faça qualquer uso do seu conteúdo, proceda à sua destruição e nos comunique de imediato para o endereço de e-mail <a href="mailto:protecaodados@salimpa.pt">protecaodados@salimpa.pt</a>. O remetente não assume qualquer responsabilidade em caso de alteração, manipulação ou falsificação da informação transmitida por via eletrónica. Obrigado.</p>
+        <p>This message, as well as any files attached, contains confidential information reserved solely for the knowledge of the person(s) indicated as recipient(s), so that its use, disclosure or copy by anyone other than the recipient is legally prohibited. If you are not the addressee, we request that you do not make any use of its contents, proceed to its destruction and notify us immediately at the email address <a href="mailto:protecaodados@salimpa.pt">protecaodados@salimpa.pt</a>. The sender does not assume any responsibility in case of alteration, manipulation or falsification of the information transmitted electronically. Thank you.</p>
+    </section>
+</div>
+</body>
+</html>
